@@ -4,7 +4,6 @@ import com.project.serenity_mental_center.bo.BOFactory;
 import com.project.serenity_mental_center.bo.custom.impl.*;
 import com.project.serenity_mental_center.dto.PaymentDto;
 import com.project.serenity_mental_center.dto.tm.PaymentTM;
-import com.project.serenity_mental_center.entity.Payment;
 import com.project.serenity_mental_center.util.Validation;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

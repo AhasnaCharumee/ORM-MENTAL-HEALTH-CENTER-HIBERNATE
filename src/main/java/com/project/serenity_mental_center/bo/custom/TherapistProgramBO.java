@@ -3,8 +3,6 @@ package com.project.serenity_mental_center.bo.custom;
 import com.project.serenity_mental_center.bo.SuperBO;
 import com.project.serenity_mental_center.dto.CustomDto;
 import com.project.serenity_mental_center.dto.TherapistProgramDto;
-import com.project.serenity_mental_center.entity.TherapistProgram;
-import com.project.serenity_mental_center.entity.TherapistProgramId;
 
 import java.time.LocalTime;
 import java.util.ArrayList;

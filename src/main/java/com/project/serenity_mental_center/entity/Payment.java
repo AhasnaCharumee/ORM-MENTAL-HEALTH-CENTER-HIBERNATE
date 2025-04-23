@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.jetbrains.annotations.Nullable;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 @AllArgsConstructor

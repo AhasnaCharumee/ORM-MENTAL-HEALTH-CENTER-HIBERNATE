@@ -2,10 +2,6 @@ package com.project.serenity_mental_center.bo.custom;
 
 import com.project.serenity_mental_center.bo.SuperBO;
 import com.project.serenity_mental_center.dto.PaymentDto;
-import com.project.serenity_mental_center.entity.Patient;
-import com.project.serenity_mental_center.entity.Payment;
-import com.project.serenity_mental_center.entity.TherapyProgram;
-import com.project.serenity_mental_center.entity.TherapySession;
 
 import java.util.ArrayList;
 

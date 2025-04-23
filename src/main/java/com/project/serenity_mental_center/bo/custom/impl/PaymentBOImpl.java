@@ -7,7 +7,6 @@ import com.project.serenity_mental_center.dao.custom.impl.PaymentDAOImpl;
 import com.project.serenity_mental_center.dao.custom.impl.TherapyProgramDAOImpl;
 import com.project.serenity_mental_center.dao.custom.impl.TherapySessionDAOImpl;
 import com.project.serenity_mental_center.dto.PaymentDto;
-import com.project.serenity_mental_center.dto.TherapySessionDTO;
 import com.project.serenity_mental_center.entity.Patient;
 import com.project.serenity_mental_center.entity.Payment;
 import com.project.serenity_mental_center.entity.TherapyProgram;

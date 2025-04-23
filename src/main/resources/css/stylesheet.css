@@ -1,0 +1,39 @@
+/* Orange Theme - Buttons */
+.button {
+    -fx-background-color: linear-gradient(to bottom right, #FCA311, #FF6F3C);
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: transparent;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+    -fx-padding: 8 15 8 15;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #FF6F3C, #FCA311);
+}
+
+/* TableView Styles */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #FF6F3C;
+    -fx-border-width: 1;
+    -fx-table-cell-border-color: #FCA311;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #FF6F3C;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #FCA311;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #FF6F3C;
+    -fx-text-fill: white;
+}

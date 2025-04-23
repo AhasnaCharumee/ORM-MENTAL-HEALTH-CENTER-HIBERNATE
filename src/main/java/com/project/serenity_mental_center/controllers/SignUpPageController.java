@@ -1,10 +1,8 @@
 package com.project.serenity_mental_center.controllers;
 
 import com.project.serenity_mental_center.bo.BOFactory;
-import com.project.serenity_mental_center.bo.custom.impl.TherapistBOImpl;
 import com.project.serenity_mental_center.bo.custom.impl.UserBOImpl;
 import com.project.serenity_mental_center.dto.UserDto;
-import com.project.serenity_mental_center.entity.User;
 import com.project.serenity_mental_center.util.EncryptPassword;
 import com.project.serenity_mental_center.util.Validation;
 import javafx.collections.FXCollections;

@@ -6,20 +6,26 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="bodyPane" prefHeight="754.0" prefWidth="1252.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.serenity_mental_center.controllers.ReportController">
+<Pane fx:id="bodyPane" prefHeight="754.0" prefWidth="1252.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.serenity_mental_center.controllers.ReportController">
    <children>
       <Label layoutX="101.0" layoutY="152.0" prefHeight="17.0" prefWidth="267.0" text="Patient Performance">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Label layoutX="101.0" layoutY="225.0" prefHeight="27.0" prefWidth="122.0" text="Patient ID :" />
+      <Label layoutX="101.0" layoutY="225.0" prefHeight="27.0" prefWidth="122.0" text="Patient ID :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
       <ComboBox fx:id="cmbPatientId" layoutX="220.0" layoutY="226.0" prefHeight="25.0" prefWidth="239.0" style="-fx-background-color: white; -fx-border-color: black;" />
-      <Label layoutX="557.0" layoutY="24.0" prefHeight="53.0" prefWidth="139.0" text="Reports">
+      <Label layoutX="557.0" layoutY="24.0" prefHeight="53.0" prefWidth="325.0" text="Reports Section" textFill="#ff9800">
          <font>
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <TextArea fx:id="txtAreReport" layoutX="107.0" layoutY="285.0" prefHeight="371.0" prefWidth="1067.0" />
+      <TextArea fx:id="txtAreReport" layoutX="107.0" layoutY="285.0" prefHeight="371.0" prefWidth="1067.0" style="-fx-border-color: #FF9800;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></TextArea>
    </children>
 </Pane>

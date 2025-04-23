@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.chart.BarChart?>
-<?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -14,53 +10,53 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="795.0" prefWidth="1535.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.serenity_mental_center.controllers.AdminHomePageController">
+<AnchorPane prefHeight="795.0" prefWidth="1535.0" style="-fx-background-color: white;" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.serenity_mental_center.controllers.AdminHomePageController">
    <children>
-      <Pane prefHeight="795.0" prefWidth="252.0" style="-fx-background-color: gray;">
+      <Pane prefHeight="795.0" prefWidth="252.0" style="-fx-background-color: black;">
          <children>
-            <VBox alignment="TOP_CENTER" layoutX="31.0" layoutY="88.0" prefHeight="536.0" prefWidth="191.0" spacing="50.0">
+            <VBox alignment="TOP_CENTER" layoutX="33.0" layoutY="21.0" prefHeight="536.0" prefWidth="191.0" spacing="50.0">
                <children>
-                  <Button fx:id="btnTherpist" mnemonicParsing="false" onAction="#navigateToTherapist" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Therapist ">
+                  <Button fx:id="btnTherpist" mnemonicParsing="false" onAction="#navigateToTherapist" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #FF9800; -fx-text-fill: white; -fx-border-color: white;" text="Therapist ">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnTherapyProgran" mnemonicParsing="false" onAction="#navigateToTherapyProgram" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Therapy Program">
+                  <Button fx:id="btnTherapyProgran" mnemonicParsing="false" onAction="#navigateToTherapyProgram" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #FF9800; -fx-text-fill: white; -fx-border-color: white;" text="Therapy Program">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnAssignToProgram" mnemonicParsing="false" onAction="#navigateToAssignProgram" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Assign to program">
+                  <Button fx:id="btnAssignToProgram" mnemonicParsing="false" onAction="#navigateToAssignProgram" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #FF9800; -fx-text-fill: white; -fx-border-color: white;" text="Assign to program">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnUserManage" mnemonicParsing="false" onAction="#navigateToUserManagePage" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="User Manage">
+                  <Button fx:id="btnUserManage" mnemonicParsing="false" onAction="#navigateToUserManagePage" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #FF9800; -fx-text-fill: white; -fx-border-color: white;" text="User Manage">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnPatientManage" mnemonicParsing="false" onAction="#navigateToPatient" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Patient Manage">
+                  <Button fx:id="btnPatientManage" mnemonicParsing="false" onAction="#navigateToPatient" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #FF9800; -fx-text-fill: white; -fx-border-color: white;" text="Patient Manage">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnRegisterProgram" mnemonicParsing="false" onAction="#navigateRegisterPage" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Register to Programs">
+                  <Button fx:id="btnRegisterProgram" mnemonicParsing="false" onAction="#navigateRegisterPage" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #FF9800; -fx-text-fill: white; -fx-border-color: white;" text="Register to Programs">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnTherapySession" mnemonicParsing="false" onAction="#navigateToTherapySession" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Theropy Session">
+                  <Button fx:id="btnTherapySession" mnemonicParsing="false" onAction="#navigateToTherapySession" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #FF9800; -fx-text-fill: white; -fx-border-color: white;" text="Theropy Session">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnPayments" mnemonicParsing="false" onAction="#navigateToPayment" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Payments">
+                  <Button fx:id="btnPayments" mnemonicParsing="false" onAction="#navigateToPayment" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #FF9800; -fx-text-fill: white; -fx-border-color: white;" text="Payments">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btnReports" mnemonicParsing="false" onAction="#navigateToReports" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Reports">
+                  <Button fx:id="btnReports" mnemonicParsing="false" onAction="#navigateToReports" prefHeight="27.0" prefWidth="153.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #FF9800; -fx-text-fill: white; -fx-border-color: white;" text="Reports">
                      <font>
                         <Font name="System Bold" size="12.0" />
                      </font>
@@ -70,65 +66,25 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </VBox>
-            <Label alignment="CENTER" layoutX="65.0" layoutY="24.0" onMouseClicked="#navigateToHomePage" prefHeight="27.0" prefWidth="122.0" text="Home">
-               <font>
-                  <Font name="System Bold" size="24.0" />
-               </font>
-            </Label>
-            <Label alignment="CENTER" layoutX="88.0" layoutY="751.0" onMouseClicked="#navigateToSettingPage" prefHeight="17.0" prefWidth="78.0" text="Setting" textAlignment="CENTER">
+            <Label alignment="CENTER" layoutX="49.0" layoutY="759.0" onMouseClicked="#navigateToSettingPage" prefHeight="22.0" prefWidth="154.0" style="-fx-background-color: #FF9800; -fx-background-radius: 10; -fx-border-color: white;" text="Setting" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <ImageView fitHeight="35.0" fitWidth="38.0" layoutX="48.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../image/home.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="78.0" layoutY="753.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../image/setting.png" />
-               </image>
-            </ImageView>
          </children>
       </Pane>
-      <Pane fx:id="bodyPane" layoutX="268.0" layoutY="15.0" prefHeight="754.0" prefWidth="1252.0" style="-fx-background-color: #EEEEEE;">
+      <Pane fx:id="bodyPane" layoutX="268.0" layoutY="15.0" prefHeight="754.0" prefWidth="1252.0" style="-fx-background-color: white;">
          <children>
-            <Label layoutX="12.0" layoutY="32.0" prefHeight="99.0" prefWidth="1229.0" text="Welcome To Serenity Mental Health Center">
+            <Label layoutX="14.0" prefHeight="99.0" prefWidth="1229.0" text="The Serenity Mental Health Therapy Center" textFill="#ff9800">
                <font>
                   <Font name="System Bold" size="58.0" />
                </font>
             </Label>
-            <Label layoutX="89.0" layoutY="214.0" prefHeight="17.0" prefWidth="267.0" text="Therapist Performance">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="101.0" layoutY="245.0" prefHeight="27.0" prefWidth="122.0" text="Therapist ID" />
-            <ComboBox fx:id="cmbTherapistId" layoutX="220.0" layoutY="246.0" prefHeight="25.0" prefWidth="239.0" style="-fx-background-color: white; -fx-border-color: black;" />
-            <BarChart fx:id="barTherapistPerformance" layoutX="89.0" layoutY="301.0">
-              <xAxis>
-                <CategoryAxis label="Date" side="BOTTOM" />
-              </xAxis>
-              <yAxis>
-                <NumberAxis fx:id="session" label="Session Count" side="LEFT" upperBound="110.0" />
-              </yAxis>
-            </BarChart>
-            <Label layoutX="708.0" layoutY="212.0" prefHeight="17.0" prefWidth="267.0" text="Theropy Session statictis">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Label>
-            <Label layoutX="720.0" layoutY="243.0" prefHeight="27.0" prefWidth="122.0" text="Program ID" />
-            <ComboBox fx:id="cmbTherapySessionId" layoutX="839.0" layoutY="244.0" prefHeight="25.0" prefWidth="239.0" style="-fx-background-color: white; -fx-border-color: black;" />
-            <BarChart fx:id="barTherapySession" layoutX="691.0" layoutY="301.0">
-               <xAxis>
-                  <CategoryAxis side="BOTTOM" />
-               </xAxis>
-               <yAxis>
-                  <NumberAxis side="LEFT" />
-               </yAxis>
-            </BarChart>
+            <ImageView fitHeight="609.0" fitWidth="609.0" layoutX="311.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/human-brain.png" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

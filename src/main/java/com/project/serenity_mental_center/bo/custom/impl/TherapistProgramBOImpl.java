@@ -2,8 +2,6 @@ package com.project.serenity_mental_center.bo.custom.impl;
 
 import com.project.serenity_mental_center.bo.custom.TherapistProgramBO;
 import com.project.serenity_mental_center.dao.DAOFactory;
-import com.project.serenity_mental_center.dao.custom.TherapistProgramDAO;
-import com.project.serenity_mental_center.dao.custom.impl.PatientDAOImpl;
 import com.project.serenity_mental_center.dao.custom.impl.TherapistProgramDAOImpl;
 import com.project.serenity_mental_center.dto.CustomDto;
 import com.project.serenity_mental_center.dto.TherapistProgramDto;

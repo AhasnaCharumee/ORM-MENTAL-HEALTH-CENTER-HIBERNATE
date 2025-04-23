@@ -2,11 +2,7 @@ package com.project.serenity_mental_center.controllers;
 
 import com.project.serenity_mental_center.bo.BOFactory;
 import com.project.serenity_mental_center.bo.custom.impl.PatientBOImpl;
-import com.project.serenity_mental_center.bo.custom.impl.TherapistBOImpl;
-import com.project.serenity_mental_center.dto.PatientDto;
 import com.project.serenity_mental_center.dto.TherapySessionDTO;
-import com.project.serenity_mental_center.entity.Patient;
-import com.project.serenity_mental_center.entity.TherapySession;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;

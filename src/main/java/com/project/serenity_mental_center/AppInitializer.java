@@ -1,9 +1,6 @@
 package com.project.serenity_mental_center;
 
 import com.project.serenity_mental_center.config.FactoryConfiguration;
-import com.project.serenity_mental_center.entity.Patient;
-import com.project.serenity_mental_center.entity.TherapyProgram;
-import com.project.serenity_mental_center.entity.User;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

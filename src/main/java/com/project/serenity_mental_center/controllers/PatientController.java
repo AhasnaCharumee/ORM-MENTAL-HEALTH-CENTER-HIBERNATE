@@ -2,7 +2,6 @@ package com.project.serenity_mental_center.controllers;
 
 import com.project.serenity_mental_center.bo.BOFactory;
 import com.project.serenity_mental_center.bo.custom.impl.PatientBOImpl;
-import com.project.serenity_mental_center.bo.custom.impl.TherapistBOImpl;
 import com.project.serenity_mental_center.dto.PatientDto;
 import com.project.serenity_mental_center.dto.tm.PatientTM;
 import com.project.serenity_mental_center.util.Validation;

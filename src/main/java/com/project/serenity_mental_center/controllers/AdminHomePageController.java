@@ -147,66 +147,12 @@ public class AdminHomePageController implements Initializable {
                 }
         }
 
-        public void setBarTherapistPerformance(){
-                String therapistId = cmbTherapistId.getSelectionModel().getSelectedItem();
-                ArrayList<CustomDto> customDtos = therapySessionBO.getTherapyPerformance(therapistId);
-                DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-                XYChart.Series<String, Long> series = new XYChart.Series<>();
-                series.setName("Sessions in Last 7 Days");
-
-                for (CustomDto customDto: customDtos) {
-                        Date date = customDto.getDates();
-                        if (date != null) {
-                                String formattedDate = dateFormat.format(date);
-                                long count = customDto.getCount();
-                                series.getData().add(new XYChart.Data<>(formattedDate, count));
-                        } else {
-                                System.out.println("Warning: Null date found for therapist performance.");
-                        }
-                }
-                System.out.println("Series size: " + series.getData().size());
-                barTherapistPerformance.getData().clear();
-                barTherapistPerformance.getData().add(series);
-        }
-
-        public void setBarTherapySession(){
-                String programId = cmbTherapySessionId.getSelectionModel().getSelectedItem();
-                ArrayList<CustomDto> customDtos = therapySessionBO.getSessionStatistic(programId);
-                DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-                XYChart.Series<String, Long> series = new XYChart.Series<>();
-                series.setName("Sessions in Last 7 Days");
-
-                for (CustomDto customDto: customDtos) {
-                        Date date = customDto.getDates();
-                        if (date != null) {
-                                String formattedDate = dateFormat.format(date);
-                                long count = customDto.getCount();
-                                series.getData().add(new XYChart.Data<>(formattedDate, count));
-                        } else {
-                                System.out.println("Warning: Null date found for therapist performance.");
-                        }
-                }
-                System.out.println("Series size: " + series.getData().size());
-                barTherapySession.getData().clear();
-                barTherapySession.getData().add(series);
-        }
-
         @Override
         public void initialize(URL location, ResourceBundle resources) {
-                ArrayList<String> therapists = therapistBO.getAllTherapistId();
-                cmbTherapistId.getItems().setAll(therapists);
 
-                ArrayList<String> therapySession = therapyProgramBO.getAllProgramId();
-                cmbTherapySessionId.getItems().setAll(therapySession);
-
-                cmbTherapistId.setOnAction(event -> {
-                        setBarTherapistPerformance();
-                });
-
-                cmbTherapySessionId.setOnAction(event -> {
-                        setBarTherapySession();
-                });
         }
+
+
 }
 
 

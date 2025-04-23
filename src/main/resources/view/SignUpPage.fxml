@@ -11,72 +11,75 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="signUpPane" opacity="0.53" prefHeight="537.0" prefWidth="506.0" style="-fx-background-color: black; -fx-border-radius: 15px;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.serenity_mental_center.controllers.SignUpPageController">
+<Pane fx:id="signUpPane" prefHeight="537.0" prefWidth="506.0" style="-fx-background-color: white; -fx-border-radius: 15px;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.serenity_mental_center.controllers.SignUpPageController">
    <children>
-      <Label alignment="CENTER" layoutX="166.0" layoutY="14.0" prefHeight="24.0" prefWidth="174.0" text="SignUp" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="166.0" layoutY="14.0" prefHeight="24.0" prefWidth="174.0" text="SignUp" textFill="#ff0998">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
       <Group layoutX="40.0" layoutY="117.0">
          <children>
-            <Label prefHeight="27.0" prefWidth="108.0" text="Name" textFill="WHITE">
+            <Label prefHeight="27.0" prefWidth="108.0" text="Name" textFill="#ff0998">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="txtName" layoutX="138.0" layoutY="1.0" prefHeight="25.0" prefWidth="289.0" promptText="\@jhone_doe" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5px; -fx-font-style: blue;" />
+            <TextField fx:id="txtName" layoutX="138.0" layoutY="1.0" prefHeight="25.0" prefWidth="289.0" promptText="\\@nadun_shan" style="-fx-background-color: transparent; -fx-border-color: #ff0998; -fx-border-radius: 5px; -fx-font-style: blue;" />
          </children>
       </Group>
-      <Label alignment="CENTER" layoutX="71.0" layoutY="49.0" prefHeight="27.0" prefWidth="364.0" text="Sign upwith your details" textFill="WHITE" />
-      <Button fx:id="btnSignUp" layoutX="148.0" layoutY="440.0" mnemonicParsing="false" onAction="#navigateToHome" prefHeight="25.0" prefWidth="211.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: black; -fx-text-fill: white; -fx-border-color: white;" text="Sign Up" />
-      <Label fx:id="lblSignIn" alignment="CENTER" layoutX="73.0" layoutY="487.0" onMouseClicked="#navigateLogin" prefHeight="27.0" prefWidth="364.0" text="If you alredyHave account? SignIn" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="71.0" layoutY="49.0" prefHeight="27.0" prefWidth="364.0" text="Sign upwith your details" textFill="#ff0998" />
+      <Button fx:id="btnSignUp" layoutX="148.0" layoutY="440.0" mnemonicParsing="false" onAction="#navigateToHome" prefHeight="25.0" prefWidth="211.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #ff0998; -fx-text-fill: white; -fx-border-color: white;" text="Sign Up" />
+      <Label fx:id="lblSignIn" alignment="CENTER" layoutX="73.0" layoutY="487.0" onMouseClicked="#navigateLogin" prefHeight="27.0" prefWidth="364.0" text="If you alredyHave account? SignIn" textFill="#ff0998">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
       <Label fx:id="lblErrorName" alignment="CENTER" layoutX="179.0" layoutY="145.0" prefHeight="17.0" prefWidth="289.0" textFill="RED" />
       <Group layoutX="40.0" layoutY="375.0">
          <children>
-            <Label prefHeight="27.0" prefWidth="108.0" text="Role" textFill="WHITE">
+            <Label prefHeight="27.0" prefWidth="108.0" text="Role" textFill="#ff0998">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
          </children>
       </Group>
-      <Label layoutX="40.0" layoutY="310.0" prefHeight="27.0" prefWidth="108.0" text="Password" textFill="WHITE">
+      <Label layoutX="40.0" layoutY="310.0" prefHeight="27.0" prefWidth="108.0" text="Password" textFill="#ff0998">
          <font>
-            <Font size="18.0" />
+            <Font name="System Bold" size="18.0" />
          </font>
       </Label>
       <Group fx:id="grpHidePassword" layoutX="178.0" layoutY="310.0">
          <children>
-            <PasswordField fx:id="txtPassword" prefHeight="27.0" prefWidth="289.0" promptText="1234jhone#@!" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5px;" />
+            <PasswordField fx:id="txtPassword" prefHeight="27.0" prefWidth="289.0" promptText="1234nadun#@!" style="-fx-background-color: transparent; -fx-border-color: #ff0998; -fx-border-radius: 5px;" />
             <ImageView fitHeight="25.0" fitWidth="23.0" layoutX="266.0" layoutY="2.0" onMouseClicked="#showPassword" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../image/icons8-blind-100%20(1).png" />
+                  <Image url="@../image/blind.png" />
                </image>
             </ImageView>
          </children>
       </Group>
       <Group layoutX="40.0" layoutY="241.0">
          <children>
-            <Label prefHeight="27.0" prefWidth="108.0" text="Username " textFill="WHITE">
+            <Label prefHeight="27.0" prefWidth="108.0" text="Username " textFill="#ff0998">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="txtUserName" layoutX="138.0" layoutY="1.0" prefHeight="25.0" prefWidth="289.0" promptText="\@jhone_doe" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5px;" />
+            <TextField fx:id="txtUserName" layoutX="138.0" layoutY="1.0" prefHeight="25.0" prefWidth="289.0" promptText="\\@nadun_shan" style="-fx-background-color: transparent; -fx-border-color: #ff0998; -fx-border-radius: 5px;" />
          </children>
       </Group>
       <Group layoutX="41.0" layoutY="179.0">
          <children>
-            <Label prefHeight="27.0" prefWidth="108.0" text="Email" textFill="WHITE">
+            <Label prefHeight="27.0" prefWidth="108.0" text="Email" textFill="#ff0998">
                <font>
-                  <Font size="18.0" />
+                  <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <TextField fx:id="txtEmail" layoutX="138.0" layoutY="1.0" prefHeight="25.0" prefWidth="289.0" promptText="\@jhone_doe" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5px;" />
+            <TextField fx:id="txtEmail" layoutX="138.0" layoutY="1.0" prefHeight="25.0" prefWidth="289.0" promptText="\\@nadun_shan" style="-fx-background-color: transparent; -fx-border-color: #ff0998; -fx-border-radius: 5px;" />
          </children>
       </Group>
-      <ComboBox fx:id="cmbRole" layoutX="178.0" layoutY="376.0" prefHeight="25.0" prefWidth="289.0" promptText="--Role--" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-radius: 5px;" />
+      <ComboBox fx:id="cmbRole" layoutX="178.0" layoutY="376.0" prefHeight="25.0" prefWidth="289.0" promptText="--Role--" style="-fx-background-color: transparent; -fx-border-color: #ff0998; -fx-border-radius: 5px;" />
       <Label fx:id="lblErrorEmail" alignment="CENTER" layoutX="178.0" layoutY="207.0" prefHeight="17.0" prefWidth="289.0" textFill="RED" />
       <Label fx:id="lblUserName" alignment="CENTER" layoutX="178.0" layoutY="269.0" prefHeight="17.0" prefWidth="289.0" textFill="RED" />
       <Label fx:id="lblPassword" alignment="CENTER" layoutX="178.0" layoutY="337.0" prefHeight="17.0" prefWidth="289.0" textFill="RED" />

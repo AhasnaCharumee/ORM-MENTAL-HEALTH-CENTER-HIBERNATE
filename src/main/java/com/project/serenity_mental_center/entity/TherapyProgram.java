@@ -3,7 +3,6 @@ package com.project.serenity_mental_center.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @AllArgsConstructor

@@ -2,7 +2,6 @@ package com.project.serenity_mental_center.dao.custom.impl;
 
 import com.project.serenity_mental_center.config.FactoryConfiguration;
 import com.project.serenity_mental_center.dao.custom.TherapistDAO;
-import com.project.serenity_mental_center.entity.Patient;
 import com.project.serenity_mental_center.entity.Therapist;
 import com.project.serenity_mental_center.entity.TherapyProgram;
 import org.hibernate.Session;

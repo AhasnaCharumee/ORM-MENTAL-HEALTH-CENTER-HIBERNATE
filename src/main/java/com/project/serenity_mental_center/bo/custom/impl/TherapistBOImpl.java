@@ -2,13 +2,9 @@ package com.project.serenity_mental_center.bo.custom.impl;
 
 import com.project.serenity_mental_center.bo.custom.TherapistBO;
 import com.project.serenity_mental_center.dao.DAOFactory;
-import com.project.serenity_mental_center.dao.custom.impl.PatientDAOImpl;
 import com.project.serenity_mental_center.dao.custom.impl.TherapistDAOImpl;
 import com.project.serenity_mental_center.dto.TherapistDto;
-import com.project.serenity_mental_center.dto.TherapistProgramDto;
 import com.project.serenity_mental_center.entity.Therapist;
-import com.project.serenity_mental_center.entity.TherapistProgram;
-import com.project.serenity_mental_center.entity.TherapyProgram;
 
 import java.util.ArrayList;
 import java.util.List;

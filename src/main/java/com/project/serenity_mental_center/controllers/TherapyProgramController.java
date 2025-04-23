@@ -1,11 +1,9 @@
 package com.project.serenity_mental_center.controllers;
 
 import com.project.serenity_mental_center.bo.BOFactory;
-import com.project.serenity_mental_center.bo.custom.impl.TherapistBOImpl;
 import com.project.serenity_mental_center.bo.custom.impl.TherapyProgramBOImpl;
 import com.project.serenity_mental_center.dto.TherapyProgramDto;
 import com.project.serenity_mental_center.dto.tm.TherapyProgramTM;
-import com.project.serenity_mental_center.entity.TherapyProgram;
 import com.project.serenity_mental_center.util.Validation;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;

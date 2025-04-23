@@ -2,13 +2,11 @@ package com.project.serenity_mental_center.bo.custom.impl;
 
 import com.project.serenity_mental_center.bo.custom.UserBO;
 import com.project.serenity_mental_center.dao.DAOFactory;
-import com.project.serenity_mental_center.dao.custom.impl.PatientDAOImpl;
 import com.project.serenity_mental_center.dao.custom.impl.UserDAOImpl;
 import com.project.serenity_mental_center.dto.UserDto;
 import com.project.serenity_mental_center.entity.User;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class UserBOImpl implements UserBO {
     private UserDAOImpl userDAO = (UserDAOImpl) DAOFactory.getInstance().getDAO(DAOFactory.DAOType.USER);

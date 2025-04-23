@@ -2,7 +2,6 @@ package com.project.serenity_mental_center.bo.custom;
 
 import com.project.serenity_mental_center.bo.SuperBO;
 import com.project.serenity_mental_center.dto.UserDto;
-import com.project.serenity_mental_center.entity.User;
 
 import java.util.ArrayList;
 
