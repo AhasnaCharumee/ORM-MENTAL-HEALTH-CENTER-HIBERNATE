@@ -56,11 +56,6 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="71.0" layoutY="442.0" prefHeight="27.0" prefWidth="364.0" text="Forgot Password" textFill="#ff0998">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Label>
             <Label fx:id="erroMsg" alignment="CENTER" layoutX="110.0" layoutY="157.0" prefHeight="17.0" prefWidth="289.0" textFill="RED" />
             <Group fx:id="grpNormalPassword" layoutX="179.0" layoutY="291.0">
                <children>
